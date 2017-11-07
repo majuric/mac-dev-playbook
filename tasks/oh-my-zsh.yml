@@ -1,0 +1,24 @@
+---
+# https://gist.github.com/kevin-smets/8568070
+
+- name: Install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+- name: Install Powerlevel9k
+  git: 
+    repo: 'https://github.com/bhilburn/powerlevel9k.git'
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+- name: Add powerlevel9k theme
+  lineinfile:
+    path: ~/.zshrc
+    line: 'ZSH_THEME="powerlevel9k/powerlevel9k"'
+    state: present
+    regexp: '^ZSH_THEME='
+
+- namse: Set default user
+  lineinfile:
+    regexp: '^'
+    path: ~/.zshrc
+    line: 'DEFAULT_USER=mario'
+    state: present
