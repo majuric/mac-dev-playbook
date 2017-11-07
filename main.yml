@@ -40,6 +40,9 @@
     - include: tasks/oh-my-zsh.yml
       tags: ['oh-my-zsh']
 
+    - include: tasks/nvm.yml
+      tags: ['nvm']
+
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"
       loop_control:
