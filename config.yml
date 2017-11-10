@@ -2,9 +2,9 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: no 
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_sudoers: no
+configure_terminal: no
+configure_osx: no
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -55,6 +55,7 @@ homebrew_cask_apps:
   - toggl
   - meld
   - anki
+  - phoenix
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
