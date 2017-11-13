@@ -43,6 +43,9 @@
     - include: tasks/nvm.yml
       tags: ['nvm']
 
+    - include: tasks/tmux.yml
+      tags: ['tmux']
+
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"
       loop_control:
