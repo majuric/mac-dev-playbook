@@ -26,12 +26,14 @@ homebrew_installed_packages:
   - knqyf263/pet/pet
   - z
   - thefuck
+  - php56
+  - php56-mcrypt
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - caskroom/fonts
-#  - homebrew/php
+  - homebrew/php
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
